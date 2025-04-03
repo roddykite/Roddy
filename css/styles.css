@@ -1,0 +1,288 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img{
+    float: left;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+
+nav ul{
+    border-radius: 15px;
+    width: auto
+    height: 5vh;
+    border: 1px solid;
+    color: #45a049;
+}
+   
+nav ul li{
+    list-style: none;
+    display: inline;
+}
+
+header img{
+    float: left;
+    width: 10vh;
+    margin: 10px;
+    height: 9vh;
+}
+
+nav a {
+    width: auto;
+    height: auto;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2px;
+    color: #030000;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+
+nav .icons {
+    display: inline;
+    gap: 1rem;
+    float: right;
+    
+}
+
+nav .icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav .icons a:hover {
+    color: #aaa;
+}
+
+
+nav ul li:hover {
+    color: #706b1d;
+    
+}
+
+nav a:hover {
+    text-decoration: double;
+    color: cornflowerblue;   
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: none;
+    display: inline-flex; /* Hidden by default */
+}
+
+.dropdown-toggle {
+    /* background-color: #444; */
+    color: #000000;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #555;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 0;
+}
+
+.dropdown-menu a:hover {
+    background-color: #666;
+}
+
+/* Show dropdown on toggle */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.hero-banner {
+    width: 100%;
+    height: 50vh;
+    margin: 15px 15px;
+    overflow: hidden;
+}
+
+.hero-banner img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.under_hero {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    text-align: center;
+}
+
+.under_hero table{
+    margin: auto;
+    width: 100%;
+}
+
+.under_hero img{
+    margin: auto;
+    height: 100%;
+    width: 50%;
+}
+
+.under_hero table td{
+    border-right: #333333 1px solid;
+    margin: auto;
+    width: 33.33%;
+    text-align: center;
+}
+
+#td3{
+    border-right: none;
+}
+
+#row1 td{
+    border: none;
+}
+
+.product-list {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 780px){
+
+    nav .icons {
+        display: none;
+    }
+
+
+    .hero-banner {
+        width: 95%;
+        position: relative;
+        margin: 15px auto;
+        
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .hero-banner {
+        width: 100%;
+        height: 75vh;
+        position: relative;
+        margin: 15px auto;
+        
+    }
+
+    .product {
+        margin: 10px 0;
+    }
+
+    /* Responsive Styles dropdown*/
+@media (max-width: 360px) {
+    nav ul {
+        display: flex ; /* Hide main navigation */
+       
+    }
+
+    .dropdown {
+        display: flex; /* Show dropdown for icons */
+        align-self: center;
+        float: right;
+    }
+
+}
