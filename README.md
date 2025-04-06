@@ -42,7 +42,7 @@ The project will encompass the following key areas:
  Thorough testing, bug fixing, and quality assurance.
  * Phase 4 (Deployment & Launch)
  * 
-Site link https://www.roddykite.github.io.Roddy/
+Site link [https://www.roddykite.github.io.Roddy/](https://roddykite.github.io/Roddy/)
 
 Website deployment, launch, and initial setup.
  * Phase 5 (Training & Support):
